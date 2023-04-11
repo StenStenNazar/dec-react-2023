@@ -1,12 +1,11 @@
-
-import './App.css';
+import Simpsons from '../src/components/Simpsons/Simpsons'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>hELLO REACT</h1>
-    </div>
-  );
+    return (
+        <div>
+            <Simpsons/>
+        </div>
+    );
 }
 
 export default App;
