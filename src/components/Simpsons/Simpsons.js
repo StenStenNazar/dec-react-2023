@@ -42,6 +42,7 @@ let simpsons = [
 const Simpsons = () => {
     return (
         <div>
+            <h1>Simpsons</h1>
             {simpsons.map(simpson => <Simpson key={Math.round(Math.random() * 100)} simpson={simpson}/>)}
         </div>
     );
