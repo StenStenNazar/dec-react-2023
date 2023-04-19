@@ -1,5 +1,5 @@
-import Simpsons from '../src/components/Simpsons/Simpsons'
-import Persons from '../src/components/Persons/Persons'
+import Simpsons from './components/Simpsons/Simpsons'
+import Persons from './components/Persons/Persons'
 
 function App() {
     return (
