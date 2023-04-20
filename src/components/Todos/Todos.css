@@ -1,0 +1,14 @@
+.todos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:40px;
+}
+.todos_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

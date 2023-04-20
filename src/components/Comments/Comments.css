@@ -1,0 +1,30 @@
+.text_comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.comments {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.cont {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.outlet {
+    height: 290px;
+    position: sticky;
+    top: 100px;
+}

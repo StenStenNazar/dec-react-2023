@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: silver;
+}
+
+.todo_link, .home_link, .albums_link, .comments_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: cornflowerblue;
+    font-family: sans-serif;
+    font-size: 25px;
+    height: 40px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.todo_link:hover, .home_link:hover, .albums_link:hover, .comments_link:hover {
+    background-color: lightslategrey;
+}
