@@ -1,0 +1,11 @@
+
+body{
+    margin: 0 auto;
+
+}
+.App{
+    margin: 20px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}

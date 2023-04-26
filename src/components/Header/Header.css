@@ -1,0 +1,12 @@
+.header{
+    height: 50px;
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.post_text,.comments_text{
+    color: black;
+}
