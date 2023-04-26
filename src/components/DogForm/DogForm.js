@@ -13,13 +13,18 @@ const DogForm = () => {
         reset()
     }
 
+    const deleteDog = (dog) => {
+        dispatch({type: 'delete', payload: dog})
+    }
+
+
     return (
         <div>
             <form onSubmit={handleSubmit(save)}>
                 <input type="text" placeholder={'dog'} {...register('dog')}/>
                 <button>save</button>
             </form>
-            {state.dogs.map(dog => <Dog key={Math.round(Math.random() * 1000)} dog={dog}/>)}
+            {state.dogs.map(dog => <Dog key={Math.round(Math.random() * 1000)} dog={dog} deleteDog={deleteDog}/>)}
         </div>
     );
 };
