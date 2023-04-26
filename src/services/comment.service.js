@@ -1,9 +1,9 @@
 import {axiosService} from "./axios.service";
 import {urls} from "../constants/url/urls";
 
-class CommentService{
-    getAll(){
-         return axiosService.get(urls.comments)
+class CommentService {
+    getAll() {
+        return axiosService.get(urls.comments)
     }
 }
 

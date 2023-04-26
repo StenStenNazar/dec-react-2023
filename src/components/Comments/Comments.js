@@ -14,6 +14,7 @@ class Comments extends Component {
     componentDidMount() {
         commentService.getAll().then(value => value.data).then(value => this.setState({comments: value}))
     }
+
     render() {
         return (
             <div>

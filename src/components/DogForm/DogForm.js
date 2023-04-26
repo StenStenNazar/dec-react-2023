@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 import {useForm} from "react-hook-form";
+
 import dog from "../Dog/Dog";
 import Dog from "../Dog/Dog";
 import {reducer} from "../reducers/dog.reducer";
@@ -16,7 +17,6 @@ const DogForm = () => {
     const deleteDog = (dog) => {
         dispatch({type: 'delete', payload: dog})
     }
-
 
     return (
         <div>

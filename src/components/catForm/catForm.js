@@ -4,7 +4,6 @@ import {useForm} from "react-hook-form";
 import Cat from "../Cat/Cat";
 import {catReducer} from "../reducers/cat.reducer";
 
-
 const CatForm = () => {
     const [state, dispatch] = useReducer(catReducer, {cats: []});
     const {register, reset, handleSubmit} = useForm();
