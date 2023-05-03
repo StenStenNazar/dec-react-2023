@@ -1,7 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-import users from "../../components/Users/Users";
-
 
 const initialState = {
     users: []

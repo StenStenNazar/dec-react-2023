@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     cars: [],
-    carForUpdate:null
+    carForUpdate: null
 }
 
 const carSlice = createSlice({
@@ -18,9 +18,9 @@ const carSlice = createSlice({
         removeCar: (state, actions) => {
             state.cars = state.cars.filter(car => car.id !== actions.payload.id)
         },
-        carForUpdateCar:(state,actions)=>{
+        carForUpdateCar: (state, actions) => {
             console.log(actions.payload.car)
-            state.carForUpdate=actions.payload.car
+            state.carForUpdate = actions.payload.car
         }
     }
 })

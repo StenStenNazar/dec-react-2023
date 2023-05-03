@@ -20,8 +20,10 @@ const Car = ({car}) => {
             <li><b>price</b>:{price}</li>
             <li><b>year</b>:{year}</li>
             <li><b>brand</b>:{brand}</li>
+            <div className={'buttons'}>
             <button onClick={()=>remove(id)}>delete</button>
             <button onClick={()=>dispatch(carActions.carForUpdateCar({car}))}>update</button>
+            </div>
         </div>
     );
 };
