@@ -1,0 +1,10 @@
+.header{
+    height: 50px;
+    background-color: lightslategrey;
+    color: ghostwhite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
