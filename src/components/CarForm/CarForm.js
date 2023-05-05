@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {carService} from "../../services/car.service";
 import {carActions} from "../../store/slices/car.slice";
 
-const CarForm = ({setTrigger}) => {
+const CarForm = () => {
     const {carForUpdate} = useSelector(state => state.carReducer);
     const {handleSubmit, register, reset, setValue} = useForm();
     const dispatch = useDispatch();
@@ -23,13 +23,13 @@ const CarForm = ({setTrigger}) => {
         const {data} = await carService.create(car)
         dispatch(carActions.addCar({data}))
         reset()
+
     }
 
     const updeter = async (car) => {
-        console.log(car)
-        const {data} = await carService.updateCar(carForUpdate.id, car)
+        await carService.updateCar(carForUpdate.id, car)
         reset()
-        setTrigger(prev => !prev)
+        dispatch(carActions.setTrigger())
     }
 
 

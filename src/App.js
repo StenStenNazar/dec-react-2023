@@ -1,9 +1,7 @@
-import './App.css';
-import Users from "./components/Users/Users";
-import Header from "./components/Header/Header";
 import {Route, Routes} from "react-router";
-import Comments from "./components/Comments/Comments";
-import Cars from "./components/Cars/Cars";
+
+import {Cars, Comments, Header, Users} from "./components";
+import './App.css';
 
 function App() {
     return (
@@ -17,5 +15,4 @@ function App() {
         </div>
     );
 }
-
 export default App;

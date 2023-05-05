@@ -25,4 +25,4 @@ const Comments = () => {
 };
 
 
-export default Comments;
+export {Comments} ;

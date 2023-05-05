@@ -1,8 +1,8 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import {useDispatch} from "react-redux";
 
 import {userService} from "../../services/user.service";
-import {useDispatch} from "react-redux";
 import {userActions} from "../../store/slices/user.slice";
 
 const UserForm = () => {
@@ -13,7 +13,6 @@ const UserForm = () => {
         const {data} = await userService.createUser(user)
         dispatch(userActions.createUser({data}))
         reset()
-
     }
 
     return (

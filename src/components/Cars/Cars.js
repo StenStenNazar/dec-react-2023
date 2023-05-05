@@ -9,9 +9,8 @@ import CarForm from "../CarForm/CarForm";
 
 const Cars = () => {
 
-    const {cars,carForUpdate} = useSelector(state => state.carReducer);
+    const {cars, trigger} = useSelector(state => state.carReducer);
     const dispatch = useDispatch();
-    const [trigger,setTrigger] = useState(null);
 
     useEffect(() => {
         carService.getAll().then(value => dispatch(carActions.setCars(value)))
@@ -19,13 +18,12 @@ const Cars = () => {
 
     return (
         <div className={'cars_wrapper'}>
-            <CarForm setTrigger={setTrigger}/>
+            <CarForm />
             <div className={'cars'}>
                 {cars && cars.map(car => <Car key={car.id} car={car}/>)}
             </div>
         </div>
-    )
-        ;
+    );
 };
 
-export default Cars;
+export {Cars};
